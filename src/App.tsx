@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import hackuariumLogo from './assets/logo.svg'
 import './App.css'
 
 function App(): JSX.Element {
@@ -9,10 +9,10 @@ function App(): JSX.Element {
     <>
       <div>
         <a href='https://react.dev' target='_blank' rel='noreferrer'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
+          <img src={hackuariumLogo} className='logo react' alt='React logo' />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Hackuarium UI for all the projects</h1>
       <div className='card'>
         <button
           onClick={() => {
@@ -26,7 +26,7 @@ function App(): JSX.Element {
         </p>
       </div>
       <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
+        Click on the Hackuarium logo to learn more
       </p>
     </>
   )
