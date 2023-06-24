@@ -9,11 +9,7 @@ function App(): JSX.Element {
     <>
       <div>
         <a href='https://react.dev' target='_blank' rel='noreferrer'>
-          <img
-            src={hackuariumLogo}
-            className='logo hackuarium'
-            alt='React logo'
-          />
+          <img src={hackuariumLogo} className='logo react' alt='React logo' />
         </a>
       </div>
       <h1>Hackuarium UI for all the projects</h1>
