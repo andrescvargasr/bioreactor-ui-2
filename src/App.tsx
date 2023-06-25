@@ -1,5 +1,4 @@
-import NavBar from './components'
-import './App.css'
+import { NavBar } from './components'
 
 function App(): JSX.Element {
   return (

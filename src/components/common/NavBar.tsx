@@ -56,7 +56,7 @@ const NavBar = (): JSX.Element => {
   return (
     <header className='m-0 p-0 w-full lg:w-max lg:h-full relative  bg-primary-900'>
       {/** Top NavBar in small screens */}
-      <div className='px-4  flex flex-row justify-between items-center lg:hidden'>
+      <div className='px-4 flex flex-row justify-between items-center lg:hidden'>
         <img
           src={process.env.PUBLIC_URL + '/logo.svg'}
           alt='Hackuarium Logo'
