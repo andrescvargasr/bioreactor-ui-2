@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react'
-
-interface UseMedia {
-  queries: string[]
-  values: boolean[]
-  defaultValue: boolean
-}
+import { type UseMedia } from '../types'
 
 export default function useMedia({
   queries,
