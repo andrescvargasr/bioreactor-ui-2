@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 // import { NavLink } from 'react-router-dom'
 
 // import { SvgOutlineMenu, SvgOutlineX, VerticalNavigation } from '../tailwind-ui'
@@ -6,6 +6,7 @@
 // import { routes, getCurrentRoute } from '../../navigation/routeHelper'
 
 import hackuariumLogo from '../../assets/images/logo.svg'
+import SvgOutlineX from '../../utils/svg/svgOutlineX'
 
 // Helper func: get only routes which has inNavbar=true
 // const getNavbarOptions = (routes, onClick) =>
@@ -42,26 +43,24 @@ import hackuariumLogo from '../../assets/images/logo.svg'
 // Navbar Component
 
 const NavBar = (): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <header className='m-0 p-0 w-full lg:w-max lg:h-full relative  bg-primary-900'>
       {/** Top NavBar in small screens */}
       <div className='px-4 flex flex-row justify-between items-center lg:hidden bg-blue-900'>
-        {/* <img
-          src={process.env.PUBLIC_URL + '/logo.svg'}
-          alt='Hackuarium Logo'
-          className='h-10 '
-        /> */}
         <img src={hackuariumLogo} alt='Hackuarium Logo' className='h-10' />
         <button
           type='button'
           className='block focus:outline-none relative z-10'
-          onClick={() => {}}
+          onClick={() => {
+            setIsOpen(!isOpen)
+          }}
         >
-          {/* {isOpen ? (
+          {isOpen ? (
             <SvgOutlineX className='text-gray-300 hover:text-white focus:text-white h-6 w-6' />
           ) : (
-            <SvgOutlineMenu className='text-gray-300 hover:text-white focus:text-white h-6 w-6' />
-          )} */}
+            ''
+          )}
         </button>
       </div>
     </header>
