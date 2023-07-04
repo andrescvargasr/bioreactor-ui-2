@@ -72,7 +72,7 @@ const NavBar = (): JSX.Element => {
       </div>
 
       {/** NavBar */}
-      {/* <nav
+      <nav
         className={
           // hide navbar by default for small screens
           isOpen || !isSmallScreen
@@ -85,13 +85,15 @@ const NavBar = (): JSX.Element => {
             <img src={hackuariumLogo} alt='Hackuarium Logo' className='h-24' />
           </div>
         )}
-        <VerticalNavigation
+        {/* <VerticalNavigation
           onSelect={onCloseMenu}
           // selected={selected}
           selected={getCurrentRoute(routes)}
           options={navbarOptions}
-        />
+        /> */}
       </nav>
+
+      {/*
 
       {/** on small screens: exit navbar when clicking anywhere in the screen */}
       {/* {isSmallScreen && isOpen && (
