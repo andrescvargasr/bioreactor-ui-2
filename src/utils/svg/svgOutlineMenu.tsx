@@ -16,7 +16,7 @@ function SvgOutlineMenu({ title, titleId, ...props }: SVGProps): JSX.Element {
       aria-labelledby={titleId}
       {...props}
     >
-      {title ?? <title id={titleId}>{title}</title>}
+      {<title id={titleId}>{title}</title>}
       <path
         strokeLinecap='round'
         strokeLinejoin='round'

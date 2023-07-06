@@ -1,14 +1,12 @@
 import { useState } from 'react'
 // import { NavLink } from 'react-router-dom'
 
-// import { SvgOutlineMenu, SvgOutlineX, VerticalNavigation } from '../tailwind-ui'
-// import useMedia from '../../hooks/useMedia'
 // import { routes, getCurrentRoute } from '../../navigation/routeHelper'
 
-import hackuariumLogo from '../../assets/images/logo.svg'
 import SvgOutlineX from '../../utils/svg/svgOutlineX'
 import SvgOutlineMenu from '../../utils/svg/svgOutlineMenu'
 import useMedia from '../../hooks/useMedia'
+import hackuariumLogo from '../../assets/images/logo.svg'
 
 // Helper func: get only routes which has inNavbar=true
 // const getNavbarOptions = (routes, onClick) =>
@@ -46,11 +44,13 @@ import useMedia from '../../hooks/useMedia'
 
 const NavBar = (): JSX.Element => {
   const isSmallScreen = useMedia({
-    queries: ['(max-width: 1023px)'],
+    queries: ['(max-width: 800px)'],
     values: [true],
     defaultValue: false,
   })
   const [isOpen, setIsOpen] = useState(false)
+  // const onCloseMenu = (e: ) => setIsOpen(false);
+
   return (
     <header className='m-0 p-0 w-full lg:w-max lg:h-full relative  bg-primary-900'>
       {/** Top NavBar in small screens */}
