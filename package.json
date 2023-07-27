@@ -1,7 +1,7 @@
 {
   "name": "bioreactor-ui-2",
   "private": true,
-  "version": "1.2.0-beta.1",
+  "version": "1.2.0",
   "homepage": "http://andrescvargasr.github.io/bioreactor-ui-2",
   "type": "module",
   "scripts": {
